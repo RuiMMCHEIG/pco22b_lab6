@@ -1,3 +1,10 @@
+/**
+* @brief Déclaration de la class Wholesale, vous pouvez ajoutez des choses, mais ne rien changer.
+* @file wholesale.h
+* @author TODO prénom nom
+* @author TODO prénom nom
+*/
+
 #ifndef WHOLESALE_H
 #define WHOLESALE_H
 #include "seller.h"

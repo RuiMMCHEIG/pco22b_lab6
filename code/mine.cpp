@@ -1,3 +1,9 @@
+/**
+* @brief implementation des méthodes de la classe Mine
+* @file mine.cpp
+* @author TODO prénom nom
+* @author TODO prénom nom
+*/
 #include "mine.h"
 #include "costs.h"
 #include <pcosynchro/pcothread.h>

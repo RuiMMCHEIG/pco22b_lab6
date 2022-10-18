@@ -1,3 +1,9 @@
+/**
+* @brief implementation des méthodes de la classe Factory
+* @file factory.cpp
+* @author TODO prénom nom
+* @author TODO prénom nom
+*/
 #include "factory.h"
 #include "mine.h"
 #include "costs.h"

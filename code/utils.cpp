@@ -1,3 +1,10 @@
+/**
+* @brief Implémentation des méthodes de la class Utils, la seule que vous devez toucher est "endService()"
+* @file utils.cpp
+* @author TODO prénom nom
+* @author TODO prénom nom
+*/
+
 #include "utils.h"
 
 

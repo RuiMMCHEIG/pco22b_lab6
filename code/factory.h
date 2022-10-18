@@ -1,3 +1,10 @@
+/**
+* @brief Déclaration de la class Factory. Vous pouvez ajoutez des choses, mais ne rien changer.
+* @file factory.h
+* @author TODO prénom nom
+* @author TODO prénom nom
+*/
+
 #ifndef FACTORY_H
 #define FACTORY_H
 #include <vector>

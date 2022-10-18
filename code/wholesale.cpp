@@ -1,3 +1,10 @@
+/**
+* @brief implementation des méthodes de la classe Wholesale
+* @file wholesale.cpp
+* @author TODO prénom nom
+* @author TODO prénom nom
+*/
+
 #include "wholesale.h"
 #include "factory.h"
 #include "costs.h"

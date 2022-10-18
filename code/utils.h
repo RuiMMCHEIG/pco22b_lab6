@@ -1,3 +1,10 @@
+/**
+* @brief Déclaration de la class Utils, vous pouvez ajoutez des choses, mais ne rien changer.
+* @file utils.h
+* @author TODO prénom nom
+* @author TODO prénom nom
+*/
+
 #ifndef UTILS_H
 #define UTILS_H
 
