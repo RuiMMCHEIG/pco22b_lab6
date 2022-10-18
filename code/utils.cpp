@@ -134,6 +134,8 @@ void Utils::run() {
         threads.emplace_back(std::make_unique<PcoThread>(&Wholesale::run, wholesalers[i]));
     }
 
+    std::cout << "Appuyez sur [ENTER] pour terminer la simulation" << std::endl;
+
     QTextStream qin(stdin);
     QString Line = qin.readLine();
 

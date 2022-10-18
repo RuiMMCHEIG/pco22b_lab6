@@ -13,9 +13,9 @@
 #include "wholesale.h"
 #include "seller.h"
 
-#define NB_MINES 5
-#define NB_FACTORIES 5
-#define NB_WHOLESALER 3
+#define NB_MINES 3
+#define NB_FACTORIES 3
+#define NB_WHOLESALER 2
 #define MINES_FUND 200
 #define FACTORIES_FUND 300
 #define WHOLESALERS_FUND 150

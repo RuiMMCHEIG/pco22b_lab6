@@ -17,7 +17,6 @@ void Wholesale::set_sellers(std::vector<Seller*> sellers) {
     this->sellers = sellers;
 
     for(Seller* seller: sellers){
-        std::cout << seller->get_unique_id() << std::endl;
         interface->set_link(unique_id, seller->get_unique_id());
     }
 

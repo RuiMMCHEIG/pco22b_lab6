@@ -103,7 +103,7 @@ Display::Display(unsigned int nbMines, unsigned int nbFactories, unsigned int nb
     zincs = std::vector<QLabel*>(nbMines + nbFactories + nbWholesalers);
 //    m_productItem = std::vector<ProductionItem*>(nbMines + nbFactories + nbWholesalers);
 
-    std::cout << nbMines + nbFactories + nbWholesalers << std::endl;
+    //std::cout << nbMines + nbFactories + nbWholesalers << std::endl;
 
     this->setRenderHints(QPainter::Antialiasing | QPainter::SmoothPixmapTransform);
     this->setMinimumHeight(SCENEWIDTH);

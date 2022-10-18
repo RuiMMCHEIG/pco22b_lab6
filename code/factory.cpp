@@ -21,6 +21,10 @@ Factory::Factory(int unique_id, int fund, ItemType item_built, std::vector<ItemT
 
 void Factory::set_wholesalers(std::vector<Wholesale *> wholesalers) {
     Factory::wholesalers = wholesalers;
+
+    for(Seller* seller: wholesalers){
+        interface->set_link(unique_id, seller->get_unique_id());
+    }
 }
 
 ItemType Factory::get_item_built() {
