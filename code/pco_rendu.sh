@@ -2,7 +2,7 @@
 
 SCRIPT=${BASH_SOURCE[0]}
 SCRIPTPATH=$(realpath $(dirname $SCRIPT))
-PROJECT_DIR=code
+PROJECT_DIR=project_student
 PROJECT_FILE=QtrainSimStudent.pro
 PROG1_DIR=${PROJECT_DIR}/prog1
 PROG2_DIR=${PROJECT_DIR}/prog2
