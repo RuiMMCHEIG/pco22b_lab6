@@ -36,8 +36,7 @@ public:
      * @brief request Méthode a appeler pour indiquer que la locomotive désire accéder à la
      * section partagée (deux contacts avant la section partagée).
      * @param loco La locomotive qui désire accéder
-     * @param locoId L'identidiant de la locomotive qui fait l'appel
-     * @param entryPoint Le point d'entree de la locomotive qui fait l'appel
+     * @param priority Le niveau de priorité de la locomotive
      */
     void request(Locomotive& loco, int priority) override {
         // TODO
@@ -53,7 +52,7 @@ public:
      * attente, le thread doit être reveillé lorsque la section partagée est à nouveau libre et
      * la locomotive redémarée. (méthode à appeler un contact avant la section partagée).
      * @param loco La locomotive qui essaie accéder à la section partagée
-     * @param locoId L'identidiant de la locomotive qui fait l'appel
+     * @param priority Le niveau de priorité de la locomotive
      */
     void access(Locomotive &loco, int priority) override {
         // TODO
@@ -75,7 +74,7 @@ public:
         afficher_message(qPrintable(QString("The engine no. %1 leaves the shared section.").arg(loco.numero())));
     }
 
-    void togglePriorityMode() {
+    void togglePriorityMode() override {
         /* TODO */
     }
 
