@@ -11,7 +11,6 @@
 
 #include "cablecar.h"
 #include "pccarinterface.h"
-#include <pcosynchro/pcosemaphore.h>
 
 /*!
  * \brief La classe PcoCableCar implémente la classe abstraite CableCar, la classe PcoCableCar
