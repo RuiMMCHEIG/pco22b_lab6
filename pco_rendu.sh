@@ -2,7 +2,7 @@
 
 PROJECT_DIR=code
 REPORT_FILE=rapport.pdf
-PROJECT_FILE=Lab3_Factory.pro
+PROJECT_FILE=telecabine.pro
 ARCHIVE=rendu.tar.gz
 
 if [ ! -d "$PROJECT_DIR" ]
