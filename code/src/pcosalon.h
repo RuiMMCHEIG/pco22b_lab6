@@ -103,6 +103,7 @@ protected:
      * \brief animationClientAccessEntrance déclenche l'animation du client qui
      * accède à l'entrée du salon. Lorsqu'il est possible pour un client d'entrer
      * dans le salon, cette méthode doit être appelée.
+     * Cette animation n'est pas bloquante et peut être interrompue sans conséquences
      * \param unsigned ID du client
      */
     void animationClientAccessEntrance(unsigned clientId);
@@ -139,6 +140,7 @@ protected:
     /*!
      * \brief animationBarberGoToSleep déclenche l'animation du barbier qui
      * part dans l'arrière salle pour taper un petit somme
+     * Cette animation n'est pas bloquante et peut être interrompue sans conséquences
      */
     void animationBarberGoToSleep();
 
