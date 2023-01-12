@@ -29,6 +29,16 @@ unsigned int PcoSalon::getNbClient()
 bool PcoSalon::accessSalon(unsigned clientId)
 {
     // TODO
+
+    // Logique client :
+
+    if (true /* barber sleeping ? */) {
+        //wake up barber
+
+    }
+    else {
+        //sit on waiting chair
+    }
 }
 
 

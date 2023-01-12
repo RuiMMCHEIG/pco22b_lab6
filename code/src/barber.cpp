@@ -19,6 +19,24 @@ Barber::Barber(GraphicSalonInterface *interface, std::shared_ptr<SalonBarberInte
 
 void Barber::run()
 {
-    // TODO
+    while (_salon->isInService()) {
+        if (_salon->getNbClient() > 0) {
+
+            _salon->pickNextClient();
+            _interface->consoleAppendTextBarber("Client suivant !");
+        }
+        else {
+
+            _salon->goToSleep();
+            _interface->consoleAppendTextBarber("zZzZz...");
+        }
+
+        _salon->waitClientAtChair();
+        _interface->consoleAppendTextBarber("Ce sera quelle coupe ?");
+
+        _salon->beautifyClient();
+        _interface->consoleAppendTextBarber("Et une coupe pour monsieur !");
+    }
+
     _interface->consoleAppendTextBarber("La journée est terminée, à demain !");
 }
