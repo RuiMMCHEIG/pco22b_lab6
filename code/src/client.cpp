@@ -26,18 +26,19 @@ void Client::run()
 
         if (_salon->accessSalon(_clientId)) {
 
+            _interface->consoleAppendTextClient(_clientId, "J'attends mon tour.");
             _salon->goForHairCut(_clientId);
-            _interface->consoleAppendTextClient(_clientId, "C'est mon tour ? Je prendrais... cette coupe !");
+            _interface->consoleAppendTextClient(_clientId, "Je prendrais... cette coupe !");
 
-            _salon->waitingForHairToGrow(_clientId);
             _interface->consoleAppendTextClient(_clientId, "Merci ! Je reviendrai quand j'aurais des cheveux !");
+            _salon->waitingForHairToGrow(_clientId);
         }
         else {
-            _salon->walkAround(_clientId);
             _interface->consoleAppendTextClient(_clientId, "C'est pas libre ? Je reviendrais plus tard !");
+            _salon->walkAround(_clientId);
         }
     }
 
-    _salon->goHome(_clientId);
     _interface->consoleAppendTextClient(_clientId, "Le salon est fermé... Zut !");
+    _salon->goHome(_clientId);
 }

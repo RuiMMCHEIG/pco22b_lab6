@@ -22,20 +22,20 @@ void Barber::run()
     while (_salon->isInService()) {
         if (_salon->getNbClient() > 0) {
 
-            _salon->pickNextClient();
             _interface->consoleAppendTextBarber("Client suivant !");
+            _salon->pickNextClient();
         }
         else {
 
-            _salon->goToSleep();
             _interface->consoleAppendTextBarber("zZzZz...");
+            _salon->goToSleep();
         }
 
         _salon->waitClientAtChair();
         _interface->consoleAppendTextBarber("Ce sera quelle coupe ?");
 
-        _salon->beautifyClient();
         _interface->consoleAppendTextBarber("Et une coupe pour monsieur !");
+        _salon->beautifyClient();
     }
 
     _interface->consoleAppendTextBarber("La journée est terminée, à demain !");

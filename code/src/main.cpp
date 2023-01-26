@@ -15,7 +15,7 @@
 #include "utils/graphicsaloninterface.h"
 
 constexpr unsigned int NB_CLIENTS = 10;
-constexpr unsigned int NB_SIEGES = 2;
+constexpr unsigned int NB_SIEGES = 6;
 
 int main(int argc, char *argv[])
 {

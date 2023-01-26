@@ -167,7 +167,15 @@ protected:
 protected:
     GraphicSalonInterface *_interface;
 
-    // TODO
+    unsigned int _capacity;
+    std::queue<unsigned> _clients;
+    unsigned int _chairNumber;
+    bool _asleep;
+
+    Condition _wakeUpBarber;
+    Condition _workingSeatEmpty;
+    Condition _clientOnChair;
+    Condition _waitForHaircut;
 };
 
 #endif // PCOSALON_H
